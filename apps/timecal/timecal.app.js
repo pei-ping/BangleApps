@@ -120,7 +120,7 @@ class TimeCalClock{
     var render=false;
     var dateStr = "";
     if (this.settings().shwDate>0) { //skip if exactly -none
-      const dateSttngs = ["","l","M","m.Y #W"];
+      const dateSttngs = ["","l","M","m.Y W"];
       for (let c of dateSttngs[this.settings().shwDate]) { //add part as configured
         switch (c){
           case "l":{ //locale
@@ -153,7 +153,7 @@ class TimeCalClock{
             break;
           }
           case "W":{ //week e.g. #02
-            dateStr+=("0"+this.ISO8601calWeek(d)).slice(-2);
+            dateStr+=("W0"+this.ISO8601calWeek(d)).slice(-2);
             break;
           }
           default: //append c
