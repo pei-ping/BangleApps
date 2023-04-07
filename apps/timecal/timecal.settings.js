@@ -44,7 +44,7 @@
       /*LANG*/"Show date": {
         value: chngdSttngs.shwDate,
         min: 0, max: 3,
-        format: v => [/*LANG*/"none", /*LANG*/"locale", /*LANG*/"M", /*LANG*/"m.Y #W"][v],
+        format: v => [/*LANG*/"none", /*LANG*/"locale", /*LANG*/"M", /*LANG*/"m.Y WV"][v],
         onchange: v => chngdSttngs.shwDate = v
       },
       /*LANG*/"Start wday": {
