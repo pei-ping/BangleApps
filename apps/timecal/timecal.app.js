@@ -149,7 +149,7 @@ class TimeCalClock{
             break;
           }
           case "w":{ //week e.g. #2
-            dateStr+=(this.ISO8601calWeek(d));
+            dateStr+=("W"+this.ISO8601calWeek(d));
             break;
           }
           case "W":{ //week e.g. #02
